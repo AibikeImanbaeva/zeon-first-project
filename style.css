@@ -1,0 +1,746 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("./adaptive.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.nav_container {
+  width: 85vw;
+  margin: 0 auto;
+  padding-top: 10px;
+  height: auto;
+  padding-left: 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  background: #ffffff;
+
+  padding-bottom: 18px;
+}
+
+.logo {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  width: 15vw;
+  height: 36px;
+  color: #0f2a59;
+  padding-right: 206px;
+}
+
+.items {
+  width: 65vw;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7px;
+}
+
+.items-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+}
+
+.items-link__a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 17px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #181818;
+  padding: 0px 0 0 12px;
+  border-right: 1px solid #e8e8e8;
+  align-self: center;
+}
+
+.items-link img {
+  padding-left: 4px;
+  align-items: center;
+}
+
+.items-lang {
+  display: flex;
+  align-items: center;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #181818;
+}
+
+.items-lang__img {
+  padding-left: 4px;
+  padding-right: 10px;
+}
+
+.about-us_container {
+  width: 85vw;
+  margin: 0 auto;
+
+  height: auto;
+}
+
+.about-us {
+  height: 568px;
+  width: 100%;
+  position: relative;
+  color: #0e0e0ee5, 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us_background img {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 568px;
+  background: linear-gradient(
+      0deg,
+      rgba(14, 14, 14, 0.9),
+      rgba(14, 14, 14, 0.9)
+    ),
+    url(1050255797.jpg);
+}
+.about-us_content {
+  display: flex;
+  justify-content: space-between;
+  min-height: 567px;
+}
+
+.bg-image {
+  position: absolute;
+
+  width: 54vw;
+
+  height: 445px;
+  left: 37.9%;
+  top: 122px;
+}
+
+.bg-image__image {
+  position: absolute;
+  width: 48vw;
+  height: 429.42px;
+  left: 70.9px;
+  top: 3.5%;
+}
+
+.about-us_text {
+  padding-top: 227px;
+  padding-left: 67px;
+}
+.text__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.text__subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  padding-bottom: 57px;
+}
+
+.text__button {
+  width: 76%;
+  height: 40px;
+  border: 1px solid #ffffff;
+  padding: 6px 35px 8px;
+  gap: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  background: linear-gradient(
+      0deg,
+      rgba(14, 14, 14, 0.9),
+      rgba(14, 14, 14, 0.9)
+    ),
+    url(1050255797.jpg);
+
+  gap: 10px;
+}
+
+.arrow-right {
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  left: 2.4%;
+  padding-top: 275px;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 270px;
+  right: 2.33%;
+  transform: rotate(180deg);
+}
+
+.elipse {
+  position: absolute;
+  width: 136px;
+  height: 10px;
+  display: flex;
+  justify-content: space-between;
+  left: 45%;
+  top: 527px;
+}
+
+.elipse_items {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ffffff;
+  background-color: rgb(0, 0, 0);
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+.tariffs {
+  width: 100%;
+  margin-top: 33px;
+  height: 130px;
+  margin-bottom: 104px;
+}
+
+.tariffs_container {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tariffs-box {
+  border-left: 5px solid #0f2a59;
+  border-radius: 0px;
+  border-width: 5px;
+  width: 354px;
+  height: 9.3vw;
+  position: relative;
+  padding: 11px;
+  margin-right: 12px;
+}
+
+.tariffs-box:hover {
+  border-left: 5px solid #ebebeb;
+}
+
+.tariffs-box__headline {
+  padding-left: 3px;
+}
+
+.tariffs-box__headline h2 {
+  font-weight: 700;
+  line-height: 204%;
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 15.8px;
+  line-height: 70%;
+  color: #181818;
+  margin-top: 10.5px;
+  margin-left: 1.2px;
+}
+.tariffs-box__headline p {
+  font-weight: 400;
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 150%;
+  margin-top: 10px;
+  margin-left: -1px;
+  color: #181818;
+}
+
+.carousel__image {
+  position: relative;
+  left: 54.54%;
+  right: 37.7%;
+  top: 19.09%;
+  bottom: 77.92%;
+}
+
+.info-block1 {
+  background: url(./src/carousel/first-img.jpg) no-repeat;
+  background-position: 100%;
+}
+
+.info-block2 {
+  background: url(./src/carousel/second-img.jpg) no-repeat;
+  background-position: 100%;
+}
+
+.info-block3 {
+  background: url(./src/carousel/third-img.jpg) no-repeat;
+  background-position: 100%;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+.actual-news {
+  width: 100%;
+  margin-bottom: 72px;
+}
+
+.actual-news_container {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 477px;
+}
+.actual-new_caption {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 125%;
+  color: #200e32;
+  margin-bottom: 24px;
+  margin-top: 4.5px;
+}
+
+.actual-news_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content--left {
+  position: relative;
+  width: 42vw;
+  height: 383px;
+}
+
+.content--right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 41vw;
+  height: 383px;
+}
+
+.content--right__info-blocks {
+  position: relative;
+  width: 19.5vw;
+  height: 181px;
+  margin-bottom: 21px;
+  background: url(./src/actual-news/actual-news_rigth1.png) no-repeat;
+}
+
+.content--right__info-blocks2 {
+  position: relative;
+  width: 19.5vw;
+  margin-bottom: 12px;
+  height: 181px;
+  background: url(./src/actual-news/right2.png) no-repeat;
+}
+
+.content--right__info-blocks3 {
+  position: relative;
+  width: 19.5vw;
+  height: 181px;
+  margin-bottom: 12px;
+  background: url(./src/actual-news/right3.png) no-repeat;
+}
+
+.content--right__info-blocks4 {
+  position: relative;
+  width: 19.5vw;
+  height: 181px;
+  margin-bottom: 12px;
+  background: url(./src/actual-news/right4.png) no-repeat;
+}
+
+.content--right__info-blocks:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.content--right__info-blocks:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.content--left__data {
+  position: absolute;
+  width: 568px;
+  left: 19px;
+  top: 287px;
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+}
+
+.content--left__title {
+  position: absolute;
+  width: 461px;
+  height: 50px;
+  left: 19px;
+  top: 310px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 125%;
+  color: #ffffff;
+}
+
+.content--right__data {
+  position: absolute;
+  width: 79px;
+  height: 14px;
+  left: 5.5px;
+  top: 116.5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 125%;
+  color: #ffffff;
+}
+
+.content--right__title {
+  position: absolute;
+  width: 248px;
+  height: 36px;
+  left: 6px;
+  top: 133.8px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+.news-pic_container {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.news-pic_blocks {
+  width: 85vw;
+  height: 480px;
+  background: url(./src/news-pic/first-pic.png) no-repeat;
+  padding-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 57px;
+  padding-right: 105px;
+}
+.news-pic_blocks2 {
+  width: 85vw;
+  height: 480px;
+  background: url(./src/news-pic/sec-pic.png) no-repeat;
+  background-position: 100%;
+  margin-bottom: 48px;
+  padding-top: 20px;
+}
+.news-pic_blocks3 {
+  width: 85vw;
+  height: 480px;
+  background: url(./src/news-pic/third-pic.png) no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 51px;
+  padding-right: 105px;
+}
+
+.blocks_text {
+  padding-top: 53px;
+  padding-left: 46px;
+  width: 47%;
+  height: 370px;
+  background-color: #fff;
+}
+
+.blocks_text_main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 15.6px;
+  width: 100%;
+  height: 244px;
+}
+
+.blocks_text_main__title {
+  width: 259px;
+  height: 34px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: #181818;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.blocks_text_main__desc {
+  width: 32vw;
+  height: 140px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.9px;
+  line-height: 146.9%;
+  color: #b6b6b6;
+  margin-top: -6px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.blocks_text_main__btn {
+  box-sizing: border-box;
+  margin-top: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #0f2a59;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 9px 40px 10px;
+  gap: 10px;
+  width: 260px;
+  height: 40px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  border: 1px solid #0f2a59;
+}
+
+.news-pic_blocks {
+  margin-bottom: 49px;
+}
+
+.blocks_text3 {
+  padding-top: 46px;
+  padding-left: 47px;
+  width: 45%;
+  height: 363px;
+  background-color: #fff;
+}
+
+.blocks_text2 {
+  padding-top: 49px;
+  padding-left: 46px;
+  width: 46.5%;
+  height: 388px;
+  margin-top: 31px;
+  margin-left: 62px;
+  background-color: #fff;
+}
+
+.blocks_text_main__title2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: #181818;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+/* ---------------------------------------------------------------------------------- */
+.footer {
+  width: 100%;
+  background-color: #181818;
+}
+.footer_container {
+  width: 85vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 55px;
+}
+
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  height: 342px;
+}
+
+.footer-contacts {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contacts__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+  margin-top: 0.7px;
+  margin-bottom: 22.9px;
+  margin-left: -3px;
+}
+
+.footer-contacts_numbers {
+  display: flex;
+  flex-direction: column;
+  height: 85px;
+  margin-bottom: 20px;
+}
+
+.contacts_numbers {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.contacts_numbers img {
+  margin-right: 9px;
+}
+
+.footer_border {
+  opacity: 0.8;
+  border: 1px solid #262626;
+  opacity: 0.8;
+  border: 1px solid #a9a2a2;
+  margin-bottom: 14px;
+}
+
+.footer-contacts_socials {
+  display: flex;
+  flex-direction: column;
+  height: 85px;
+  margin-bottom: 20px;
+}
+
+.contacts_socials,
+.contacts_address {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  margin-left: -0.5px;
+  color: #ffffff;
+  margin-bottom: 11px;
+}
+
+.contacts_socials img {
+  margin-right: 16px;
+}
+
+.footer-contacts__address {
+  margin-top: 9px;
+}
+
+.footer-contacts__address img {
+  margin-right: 16px;
+}
+
+.footer-remotion {
+  margin: 48px auto;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.footer-carts {
+  height: 342px;
+}
+/* --------------------------------------------------------------------------*/
+.main_container {
+  padding-top: 32px;
+  width: 85.4vw;
+  margin: 0 auto;
+  height: 800px;
+}
+
+.main_text {
+  width: 868px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 140%;
+  color: #181818;
+  margin-bottom: 16px;
+}
+
+.main_text {
+  width: 868px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  height: 609px;
+  color: #7f8d97;
+}

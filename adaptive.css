@@ -1,0 +1,11 @@
+@media(max-width: 120px){
+.menu {
+   padding: 0 40px 0 40px;
+}
+
+.items{
+   padding-right: 60px;
+   width: 55vw;
+}
+}
+    
