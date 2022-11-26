@@ -45,6 +45,9 @@
   .blocks_text2 {
     height: 370px;
   }
+
+  .blocks_text_main__desc {
+    width: 35vw;}
 }
 
 @media all and (max-width: 1100px) {
