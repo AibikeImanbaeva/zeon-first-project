@@ -56,10 +56,6 @@
   .blocks_text3:hover {
     background: rgba(163, 163, 163, 0.6);
   }
-
-  .blocks_text3:hover {
-    background: rgba(163, 163, 163, 0.6);
-  }
   .arrows img {
     width: 5%;
   }
@@ -132,6 +128,9 @@
   .footer-contacts {
     margin-bottom: 50px;
   }
+  .tariffs-box__headline h2 {
+    line-height: 119%;
+  }
 
   .tariffs {
     margin-bottom: 65px;
@@ -142,8 +141,10 @@
   .menu label {
     display: block;
     font-size: 39px;
-    padding: 0 -11px;
-    /* position: fixed; */
+  }
+  .items {
+    width: 96%;
+    height: 74px;
   }
 
   .info-block1,
@@ -192,41 +193,30 @@
   }
   .logo {
     padding-left: 40%;
-  }
-
-  .logo {
     display: none;
   }
   .nav_container {
     width: 100vw;
-    padding: 0 0 0 0;
+    padding: 0;
   }
   .menu {
+    position: fixed;
     width: 100vw;
     padding-bottom: 0;
     height: 50px;
-    background: linear-gradient(90deg, #f7f3e4, #a3a3a3);
+    background: linear-gradient(1deg, #526d94, #ffffff);
   }
-
-  #hamburger {
-    cursor: pointer;
-    position: absolute;
-    left: 0;
-    width: 32px;
-    height: 32px;
-    top: 10px;
-    opacity: 0;
+  .items-link {
+    display: none;
+    width: 100%;
   }
-
   input:checked ~ .items-link {
-    display: block;
-    position: absolute;
+    display: flex;
+    height: 9%;
+    position: fixed;
     z-index: 500;
-    background: linear-gradient(90deg, #f7f3e4, #eaeebc);
-    padding-bottom: 3vw;
-    top: 0;
-    left: 0px;
-    width: 100vw;
+    background: linear-gradient(1deg, #526d94, #ffffff);
+    width: 100%;
   }
   .items-lang {
     display: none;
@@ -245,10 +235,12 @@
   .blocks_text {
     padding-left: 16px;
   }
-  .items-link a {
+  .items-link__a {
     color: rgb(0, 0, 0);
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 10px;
+    margin-left: 11%;
+    border: none;
   }
   .bg-image {
     background: url(./src/about-us/humans.png) 90% 0% no-repeat;
@@ -264,7 +256,6 @@
   .blocks_text {
     width: 60vw;
   }
-
   .elipse {
     top: 79%;
   }
@@ -304,7 +295,7 @@
     top: 92%;
   }
   .content--left__title {
-    font-size: 15px;
+    font-size: 23px;
   }
   .blocks_text2,
   .blocks_text3,
@@ -317,7 +308,7 @@
   }
   .about-us_content {
     display: flex;
-    height: 46.5vw;
+    height: 39.5vw;
   }
   .tariffs-box__headline h2 {
     line-height: 116%;
@@ -355,23 +346,36 @@
     height: 39.5vw;
   }
   .blocks_text_main__btn {
-    padding: 0;
+    padding: 2%;
     width: 60%;
     margin: 15px auto;
-    height: 26px;
+    height: 33px;
   }
   .actual-news_container {
     padding: 0;
     width: 85;
   }
-  .about-us_content {
-    height: 39.5vw;
-  }
 }
 
 @media all and (max-width: 596px) {
+  .blocks_text_main__desc {
+    height: 85%;
+  }
   .blocks_text_main__btn {
-    margin-top: 10px;
+    margin-left: 23%;
+    padding: 7px;
+    width: 50%;
+  }
+  .blocks_text_main {
+    width: 80%;
+    margin-top: 6%;
+  }
+  .blocks_text,
+  .blocks_text2,
+  .blocks_text3 {
+    padding: 0;
+    width: 66vw;
+    display: flex;
   }
 }
 
@@ -380,7 +384,12 @@
   .blocks_text2,
   .blocks_text3 {
     height: 373px;
-    padding-top: 20px;
+    padding-top: 4px;
+  }
+
+  .items-link__a {
+    font-size: 14px;
+    margin-left: 7%;
   }
   .bg-image {
     background-size: 100% 92%;
@@ -391,13 +400,23 @@
     margin-bottom: 50px;
   }
   .blocks_text_main__btn {
-    margin-top: 25px;
+    margin-left: 23%;
+
+    font-size: 12px;
+    margin-bottom: 5%;
+    height: 35px;
   }
+
   .text__button {
     width: 63%;
     font-size: 10px;
     height: 29px;
     padding: 0;
+  }
+
+  .blocks_text_main__desc {
+    font-size: 11px;
+    height: 86%;
   }
   .footer-header {
     height: auto;
@@ -414,10 +433,17 @@
     padding-bottom: 29px;
     font-size: 11px;
   }
+
+  .items-link__a {
+    margin-left: 3%;
+  }
   .blocks_text_main__btn {
-    width: 43%;
+    width: 54%;
     font-size: 12px;
-    padding-top: 2px;
+    height: 28px;
+    margin-top: -1%;
+    overflow: 3px;
+    padding: 3px;
   }
   .footer-contacts {
     margin-bottom: 53px;
@@ -440,6 +466,11 @@
     width: 60vw;
   }
 }
+@media all and (max-width: 460px) {
+  .blocks_text_main {
+    height: 258px;
+  }
+}
 
 @media all and (max-width: 440px) {
   .footer-header {
@@ -453,7 +484,9 @@
   .about-us_content {
     height: 60.5vw;
   }
-
+  .items-link__a {
+    font-size: 13px;
+  }
   .elipse {
     top: 60%;
   }
@@ -467,9 +500,10 @@
     padding-left: 14px;
   }
   .blocks_text_main__btn {
-    font-size: 12px;
+    font-size: 11px;
     width: 55%;
-    margin-top: 0;
+    margin-top: -47px;
+    margin-left: 15%;
   }
   .footer-contacts {
     margin-bottom: 30px;
@@ -501,7 +535,7 @@
     margin: auto;
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 7px;
   }
   .about-us {
     height: 61vw;
@@ -515,11 +549,20 @@
   }
   .blocks_text_main__desc {
     font-size: 10px;
+    width: 90%;
+  }
+
+  .items-link__a {
+    font-size: 13px;
   }
 }
 @media all and (max-width: 394px) {
   .about-us_content {
     height: 40vw;
+  }
+  .items-link__a {
+    font-size: 13spx;
+    margin-left: 0%;
   }
   .text__title {
     font-size: 20px;
@@ -535,9 +578,11 @@
     padding-left: 10.5%;
   }
   .blocks_text_main__btn {
-    font-size: 13px;
-    padding: 10px 0 0 0;
-    margin-top: 32px;
+    margin-left: 16%;
+
+    font-size: 11px;
+    padding: 4px 0 0 0;
+    margin-top: -6%;
   }
   .info-block1,
   .info-block2,
@@ -571,11 +616,10 @@
   .tariffs-box__headline h2 {
     font-size: 14.8px;
   }
-
-  .blocks_text_main__btn {
-    font-size: 10px;
-    padding: 4px 0 0 0;
-    margin-top: 14px;
+  .blocks_text,
+  .blocks_text2,
+  .blocks_text3 {
+    height: 383px;
   }
 }
 
@@ -600,8 +644,8 @@
   .blocks_text_main__btn {
     font-size: 12px;
     padding: 3px 2px 0px;
-    width: 96%;
-    margin-top: 1vw;
+    width: 61%;
+    margin-top: -5vw;
     height: 28px;
   }
   .about-us_content {

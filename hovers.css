@@ -1,0 +1,39 @@
+/* hovers */
+.text__button:hover {
+    cursor: pointer;
+    color: #3a7999;
+    box-shadow: 0 0 0 3px #3a7999;
+    transition: all 2s ease;
+  }
+  
+  .blocks_text_main__btn:hover {
+    cursor: pointer;
+    color: #383939;
+    box-shadow: 0 0 0 3px #3a7999;
+    background: linear-gradient(90deg, #262626, #71759c, #5b61a7, #7586e1);
+    transition: all 2s ease;
+  }
+  
+  .logo:hover {
+    cursor: pointer;
+  }
+  
+  .items-lang__img:hover {
+    padding: 1px;
+    outline: 1px solid;
+    background: linear-gradient(90deg, #262626, #232967, #2936c7, #7586e1);
+    border-radius: 10%;
+  }
+  
+  .items-link__a:hover {
+    background: linear-gradient(90deg, #050505, #363636, #808080, #c7c7c7);
+    color: #ffffff;
+  }
+  
+  .info-block1:hover,
+  .info-block2:hover,
+  .info-block3:hover {
+    background: linear-gradient(90deg, #c9b6bc, #e0e5eb);
+    color: cadetblue;
+  }
+  
