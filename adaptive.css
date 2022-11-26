@@ -212,10 +212,11 @@
   .items-link {
     display: none;
     width: 100%;
+  padding-top: 10px;
   }
   input:checked ~ .items-link {
     display: flex;
-    height: 9%;
+    height: 7%;
     position: fixed;
     z-index: 500;
     background: linear-gradient(1deg, #526d94, #ffffff);
@@ -690,4 +691,7 @@
 @media  all and (min-width: 1366px){
   .elipse {
     top: 96%;}
+
+    .bg-image {
+      background-position-y: 72%;}
 }
